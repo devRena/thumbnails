@@ -10,7 +10,11 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.post("/", function(req, res) {
+app.get("/", function(req, res) {
+  res.send("Welcome to Rena's 5app Test");
+});
+
+app.post("/api/", function(req, res) {
   checkRequest(req.body, res, "Body is missing in your request");
   checkRequest(
     req.body.payload,
