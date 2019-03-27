@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/5app/5app-coding-challenge#readme",
   "scripts": {
-    "start": "node server.js"
+    "start": "npm i && node server.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
