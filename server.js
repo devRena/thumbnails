@@ -43,8 +43,8 @@ app.post("/api/", function(req, res) {
   res.send(result);
 });
 
-console.log("Port is 8080");
-var server = app.listen(8080);
+console.log("Port is 80");
+var server = app.listen(80);
 
 function checkRequest(parameter, res, errorMessage) {
   if (!parameter) res.status(400).send(errorMessage);
