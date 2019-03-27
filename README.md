@@ -6,5 +6,5 @@ https://thumbnail-test.herokuapp.com/api/filter/
 
 ### Scripts
 
-Run `npm start` to start the server locally
-Run `npm test` to run tests locally
+* Run `npm start` to start the server locally
+* Run `npm test` to run tests locally
