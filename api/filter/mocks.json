@@ -1,0 +1,125 @@
+[
+  {
+    "description": "Test1 of Valid input",
+    "input": [
+      {
+        "name": "Molly",
+        "count": 12,
+        "logos": [
+          {
+            "size": "16x16",
+            "url": "https://example.com/16x16.png"
+          },
+          {
+            "size": "64x64",
+            "url": "https://example.com/64x64.png"
+          }
+        ]
+      },
+      {
+        "name": "Dolly",
+        "count": 0,
+        "logos": [
+          {
+            "size": "128x128",
+            "url": "https://example.com/128x128.png"
+          },
+          {
+            "size": "64x64",
+            "url": "https://example.com/64x64.png"
+          }
+        ]
+      },
+      {
+        "name": "Polly",
+        "count": 4,
+        "logos": [
+          {
+            "size": "16x16",
+            "url": "https://example.com/16x16.png"
+          },
+          {
+            "size": "64x64",
+            "url": "https://example.com/64x64.png"
+          }
+        ]
+      }
+    ],
+    "output": [
+      {
+        "name": "Molly",
+        "count": 12,
+        "thumbnail": "https://example.com/64x64.png"
+      },
+      {
+        "name": "Polly",
+        "count": 4,
+        "thumbnail": "https://example.com/64x64.png"
+      }
+    ]
+  },
+  {
+    "description": "Test2 of Valid input",
+    "input": [
+      {
+        "name": "Molly",
+        "count": 12,
+        "logos": [
+          {
+            "size": "100x100",
+            "url": "https://example.com/100x100.png"
+          },
+          {
+            "size": "64x64",
+            "url": "https://example.com/64x64.png"
+          }
+        ]
+      },
+      {
+        "name": "Dolly",
+        "count": 2,
+        "logos": [
+          {
+            "size": "128x128",
+            "url": "https://example.com/128x128.png"
+          },
+          {
+            "size": "64x64",
+            "url": "https://example.com/64x64.png"
+          }
+        ]
+      },
+      {
+        "name": "Polly",
+        "count": 1,
+        "logos": [
+          {
+            "size": "16x16",
+            "url": "https://example.com/16x16.png"
+          },
+          {
+            "size": "64x64",
+            "url": "https://example.com/64x64.png"
+          }
+        ]
+      }
+    ],
+    "output": [
+      {
+        "name": "Molly",
+        "count": 12,
+        "thumbnail": "https://example.com/100x100.png"
+      },
+      {
+        "name": "Dolly",
+        "count": 2,
+        "thumbnail": "https://example.com/128x128.png"
+      }
+    ]
+  },
+  {
+    "description": "Test of null input",
+    "input": null,
+    "output": []
+  }
+]

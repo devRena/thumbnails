@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/5app/5app-coding-challenge#readme",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node_modules/.bin/jest"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -22,5 +23,8 @@
   },
   "engines": {
     "node": "8.x"
+  },
+  "devDependencies": {
+    "jest": "^24.5.0"
   }
 }
