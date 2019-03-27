@@ -43,8 +43,10 @@ app.post("/api/", function(req, res) {
   res.send(result);
 });
 
-console.log("Port is 80");
-var server = app.listen(80);
+
+const port = process.env.PORT || 80
+const server = app.listen(port);
+console.log("Port is: " + port);
 
 function checkRequest(parameter, res, errorMessage) {
   if (!parameter) res.status(400).send(errorMessage);
